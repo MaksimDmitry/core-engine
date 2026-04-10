@@ -1,0 +1,47 @@
+{
+  "service_name": "core-engine",
+  "status": "up",
+  "timestamp": "2024-10-27T10:30:00Z",
+  "version": "1.2.3",
+  "dependencies": {
+    "database": {
+      "status": "up",
+      "latency_ms": 15
+    },
+    "message_queue": {
+      "status": "up",
+      "messages_pending": 0
+    },
+    "authentication_service": {
+      "status": "up",
+      "response_time_ms": 20
+    }
+  },
+  "metrics": {
+    "cpu_usage": 0.65,
+    "memory_usage": 0.78,
+    "active_threads": 12,
+    "requests_per_second": 125.5
+  },
+  "health_checks": [
+    {
+      "name": "disk_space",
+      "status": "up",
+      "details": {
+        "available_gb": 100
+      }
+    },
+    {
+      "name": "network_connectivity",
+      "status": "up",
+      "details": {
+        "ping_latency_ms": 2
+      }
+    }
+  ],
+  "metadata": {
+    "environment": "production",
+    "region": "us-east-1",
+    "instance_id": "i-0abcdef1234567890"
+  }
+}
